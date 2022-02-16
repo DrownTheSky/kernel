@@ -1,0 +1,36 @@
+menu "User Sky Drivers"
+
+config SKY_DRIVERS
+	bool "Sky Drivers"
+	---help---
+	  Enable support for Sky Drivers
+
+if SKY_DRIVERS
+
+config LED_DRIVER
+	bool "LED Driver"
+	default y
+	---help---
+	  User SKY LED Driver
+
+config KEY_DRIVER
+	bool "Key Driver"
+	default y
+	---help---
+	  User SKY Key Driver
+
+config AP3216C_DRIVER
+	bool "AP3216C Driver"
+	default y
+	---help---
+	  User SKY AP3216C Driver
+
+config OLED_DRIVER
+	bool "OLED Driver"
+	default y
+	---help---
+	  User SKY OLED Driver
+
+endif # if SKY_DRIVERS
+
+endmenu

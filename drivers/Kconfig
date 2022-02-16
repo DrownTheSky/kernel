@@ -210,4 +210,6 @@ source "drivers/headset_observe/Kconfig"
 
 source "drivers/boardinfo/Kconfig"
 
+source "drivers/user_sky_drivers/Kconfig"
+
 endmenu
